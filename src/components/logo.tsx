@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { MapPin } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2" prefetch={false}>
-      <MapPin className="h-8 w-8 text-primary" />
+      <Globe className="h-8 w-8 text-primary" />
       <span className="text-xl font-bold tracking-tight text-foreground font-headline">
         Nigran
       </span>
