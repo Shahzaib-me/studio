@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A dark background with a tracking pin on a world map, with text 'Nigran Technologies' and 'Smart Tracking. Trusted Protection.'",
-      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/dev-stud-1.0/668ff40c1d639b7d8b8a7b97.png",
-      "imageHint": "tracking world"
+      "description": "A person looking at a map on a phone with a city in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1528827293362-8e4a2b535b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFja2luZyUyMG1hcCUyMGNpdHl8ZW58MHx8fHwxNzE5NTIzODg4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "tracking map"
     },
     {
       "id": "tifl",
@@ -33,7 +33,7 @@
     {
       "id": "login-bg",
       "description": "Abstract technological background with network lines.",
-      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/dev-stud-1.0/668ff40c1d639b7d8b8a7b97.png",
+      "imageUrl": "https://images.unsplash.com/photo-1528827293362-8e4a2b535b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFja2luZyUyMG1hcCUyMGNpdHl8ZW58MHx8fHwxNzE5NTIzODg4fDA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "abstract network"
     }
   ]
