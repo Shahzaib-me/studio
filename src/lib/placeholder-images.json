@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Nigran Technologies banner with logo and tagline",
-      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/dev-stud-1.0/669046c81d639b7d8b8a7b9e.png",
-      "imageHint": "company banner"
+      "description": "A dark background with a tracking pin on a world map, with text 'Nigran Technologies' and 'Smart Tracking. Trusted Protection.'",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/dev-stud-1.0/668ff40c1d639b7d8b8a7b97.png",
+      "imageHint": "tracking world"
     },
     {
       "id": "tifl",
