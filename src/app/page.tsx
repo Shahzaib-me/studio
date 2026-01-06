@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Baby, PawPrint, Car } from 'lucide-react';
+import { Baby, PawPrint, Car, ArrowRight } from 'lucide-react';
 import { LandingHeader } from '@/components/landing-header';
 import { LandingFooter } from '@/components/landing-footer';
 
@@ -19,26 +19,29 @@ export default function LandingPage() {
       description: 'Advanced child safety tracking with geofencing, SOS alerts, and real-time location monitoring to ensure your peace of mind.',
       icon: <Baby className="h-8 w-8" />,
       image: tiflImage,
+      link: '/dashboard/tifl'
     },
     {
       title: 'Nigran-Anaam',
       description: 'Comprehensive livestock and animal tracking. Monitor health, location, and movement history to optimize your herd management.',
       icon: <PawPrint className="h-8 w-8" />,
       image: anaamImage,
+      link: '/dashboard/anaam'
     },
     {
       title: 'Nigran-Motor',
       description: 'Robust vehicle tracking for personal or fleet management. Features speed monitoring, route history, and geofence alerts.',
       icon: <Car className="h-8 w-8" />,
       image: motorImage,
+      link: '/dashboard/motor'
     },
   ];
 
   return (
-    <div className="flex min-h-screen flex-col bg-background">
+    <div className="flex min-h-[100dvh] flex-col bg-background">
       <LandingHeader />
       <main className="flex-1">
-        <section className="relative w-full h-[550px] flex items-center justify-center text-center text-white">
+        <section className="relative w-full h-[80vh] min-h-[500px] flex items-center">
            {heroImage && (
               <Image
                 src={heroImage.imageUrl}
@@ -49,16 +52,23 @@ export default function LandingPage() {
                 priority
               />
             )}
-            <div className="relative z-10 p-4 bg-black/50 rounded-xl">
-                <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">Nigran Technologies</h1>
-                <p className="text-lg mt-4">Smart Tracking. Trusted Protection.</p>
-                <div className="flex gap-4 mt-8 justify-center">
-                    <Button size="lg" asChild>
-                        <Link href="/signup">Get Started</Link>
-                    </Button>
-                    <Button size="lg" variant="outline" className="bg-transparent hover:bg-white/10" asChild>
-                        <Link href="/login">Login</Link>
-                    </Button>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent" />
+            <div className="container relative z-10 text-white text-left">
+                <div className="max-w-2xl">
+                    <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter leading-tight">
+                        Smart Tracking. Trusted Protection.
+                    </h1>
+                    <p className="text-lg md:text-xl mt-6 text-slate-200">
+                        Nigran Technologies provides an integrated platform for child, animal, and vehicle safety, keeping you connected to what's important.
+                    </p>
+                    <div className="flex gap-4 mt-10">
+                        <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                            <Link href="/signup">Get Started <ArrowRight className="ml-2" /></Link>
+                        </Button>
+                        <Button size="lg" variant="outline" className="bg-transparent border-slate-300 text-white hover:bg-white/10 hover:text-white" asChild>
+                            <Link href="/login">Login</Link>
+                        </Button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,16 +83,18 @@ export default function LandingPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {features.map((feature) => (
-                <Card key={feature.title} className="flex flex-col overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg hover:shadow-2xl bg-card">
+                <Card key={feature.title} className="group flex flex-col overflow-hidden transition-all duration-300 shadow-md hover:shadow-2xl hover:-translate-y-2 bg-card">
                   {feature.image && (
-                    <Image
-                      src={feature.image.imageUrl}
-                      alt={feature.image.description}
-                      width={600}
-                      height={400}
-                      className="w-full h-48 object-cover"
-                      data-ai-hint={feature.image.imageHint}
-                    />
+                    <div className="overflow-hidden">
+                        <Image
+                        src={feature.image.imageUrl}
+                        alt={feature.image.description}
+                        width={600}
+                        height={400}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                        data-ai-hint={feature.image.imageHint}
+                        />
+                    </div>
                   )}
                   <CardHeader>
                     <div className="flex items-center gap-4">
@@ -95,6 +107,13 @@ export default function LandingPage() {
                   <CardContent className="flex-1">
                     <p className="text-muted-foreground">{feature.description}</p>
                   </CardContent>
+                  <div className="p-6 pt-0">
+                    <Button variant="ghost" asChild className="p-0 h-auto text-primary hover:text-primary/80">
+                        <Link href={feature.link}>
+                            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </Button>
+                  </div>
                 </Card>
               ))}
             </div>
@@ -102,13 +121,15 @@ export default function LandingPage() {
         </section>
 
         <section className="container py-20 md:py-32 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Ready to Start Monitoring?</h2>
-          <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Join Nigran today and gain the confidence that comes with our state-of-the-art tracking solutions.
-          </p>
-          <Button size="lg" className="mt-8" asChild>
-            <Link href="/signup">Create Your Account</Link>
-          </Button>
+            <div className="bg-primary/90 text-primary-foreground rounded-2xl p-12 md:p-16 shadow-xl">
+                <h2 className="text-3xl md:text-4xl font-bold font-headline">Ready to Start Monitoring?</h2>
+                <p className="text-lg text-primary-foreground/80 mt-4 max-w-2xl mx-auto">
+                    Join Nigran today and gain the confidence that comes with our state-of-the-art tracking solutions.
+                </p>
+                <Button size="lg" className="mt-8 bg-white text-primary hover:bg-slate-200" asChild>
+                    <Link href="/signup">Create Your Account <ArrowRight className="ml-2" /></Link>
+                </Button>
+            </div>
         </section>
       </main>
       <LandingFooter />
