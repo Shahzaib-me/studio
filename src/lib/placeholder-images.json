@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A diverse family smiling, conveying safety and trust.",
+      "imageUrl": "https://images.unsplash.com/photo-1742522450616-a2cf0cba1274?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBzbWlsaW5nfGVufDB8fHx8MTc2NzYxMDEzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family smiling"
+    },
+    {
+      "id": "tifl",
+      "description": "A child playing safely in a park, with a parent looking on.",
+      "imageUrl": "https://images.unsplash.com/photo-1633815096160-4302e06aa11f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsZCUyMHBhcmt8ZW58MHx8fHwxNzY3NjY2MzAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child park"
+    },
+    {
+      "id": "anaam",
+      "description": "A herd of cattle in a green pasture.",
+      "imageUrl": "https://images.unsplash.com/photo-1620969681783-414716fc5a28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXR0bGUlMjBwYXN0dXJlfGVufDB8fHx8MTc2NzY2NjMwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cattle pasture"
+    },
+    {
+      "id": "motor",
+      "description": "A fleet of delivery vans on a city street.",
+      "imageUrl": "https://images.unsplash.com/photo-1688389683211-67ad6f81ca59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkZWxpdmVyeSUyMHZhbnN8ZW58MHx8fHwxNzY3NjU2OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "delivery vans"
+    },
+    {
+      "id": "map",
+      "description": "A stylized map showing location markers and routes.",
+      "imageUrl": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2NzYyMzM3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    },
+    {
+      "id": "login-bg",
+      "description": "Abstract technological background with network lines.",
+      "imageUrl": "https://images.unsplash.com/photo-1738082956257-06cde4444b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMG5ldHdvcmt8ZW58MHx8fHwxNzY3NjEzMzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract network"
+    }
+  ]
 }
