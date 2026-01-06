@@ -41,7 +41,7 @@ export default function LandingPage() {
     <div className="flex min-h-[100dvh] flex-col bg-background">
       <LandingHeader />
       <main className="flex-1">
-        <section className="relative w-full h-[80vh] min-h-[500px] flex items-center">
+        <section className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center">
            {heroImage && (
               <Image
                 src={heroImage.imageUrl}
@@ -52,16 +52,16 @@ export default function LandingPage() {
                 priority
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent" />
-            <div className="container relative z-10 text-white text-left">
-                <div className="max-w-2xl">
+            <div className="absolute inset-0 bg-black/60" />
+            <div className="container relative z-10 text-white">
+                <div className="max-w-3xl mx-auto">
                     <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter leading-tight">
                         Smart Tracking. Trusted Protection.
                     </h1>
                     <p className="text-lg md:text-xl mt-6 text-slate-200">
                         Nigran Technologies provides an integrated platform for child, animal, and vehicle safety, keeping you connected to what's important.
                     </p>
-                    <div className="flex gap-4 mt-10">
+                    <div className="flex gap-4 mt-10 justify-center">
                         <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
                             <Link href="/signup">Get Started <ArrowRight className="ml-2" /></Link>
                         </Button>
