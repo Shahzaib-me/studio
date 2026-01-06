@@ -38,35 +38,32 @@ export default function LandingPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <LandingHeader />
       <main className="flex-1">
-        <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
-          <div className="flex flex-col gap-6">
-            <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">
-              Integrated Tracking for Total Peace of Mind
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Nigran ("monitoring" in Arabic) offers a unified platform to track what matters most. From child safety to livestock and vehicles, stay connected and secure.
-            </p>
-            <div className="flex gap-4">
-              <Button size="lg" asChild>
-                <Link href="/signup">Get Started</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/login">Login</Link>
-              </Button>
-            </div>
-          </div>
-          {heroImage && (
-            <div className="rounded-xl overflow-hidden shadow-2xl">
+        <section className="relative w-full h-[550px] flex items-center justify-center text-center text-white">
+           {heroImage && (
               <Image
                 src={heroImage.imageUrl}
                 alt={heroImage.description}
-                width={1200}
-                height={800}
-                className="w-full h-auto object-cover"
+                fill
+                className="object-cover"
                 data-ai-hint={heroImage.imageHint}
               />
+            )}
+           <div className="relative z-10 p-4 bg-black/50 rounded-xl">
+             <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tighter">
+              Nigran Technologies
+            </h1>
+            <p className="text-lg mt-4">
+              Smart Tracking. Trusted Protection.
+            </p>
+            <div className="flex gap-4 mt-8 justify-center">
+              <Button size="lg" asChild>
+                <Link href="/signup">Get Started</Link>
+              </Button>
+              <Button size="lg" variant="outline" className="bg-transparent hover:bg-white/10" asChild>
+                <Link href="/login">Login</Link>
+              </Button>
             </div>
-          )}
+           </div>
         </section>
 
         <section id="features" className="py-20 md:py-32 bg-secondary/30">

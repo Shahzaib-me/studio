@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A diverse family smiling, conveying safety and trust.",
-      "imageUrl": "https://images.unsplash.com/photo-1742522450616-a2cf0cba1274?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjBzbWlsaW5nfGVufDB8fHx8MTc2NzYxMDEzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "family smiling"
+      "description": "A dark background with a tracking pin on a world map, with text 'Nigran Technologies' and 'Smart Tracking. Trusted Protection.'",
+      "imageUrl": "https://storage.googleapis.com/aifire.dev/public/dev-stud-1.0/668ff40c1d639b7d8b8a7b97.png",
+      "imageHint": "tracking world"
     },
     {
       "id": "tifl",
