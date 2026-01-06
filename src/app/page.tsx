@@ -120,6 +120,27 @@ export default function LandingPage() {
           </div>
         </section>
 
+        <section id="demo" className="py-20 md:py-32">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">See Nigran in Action</h2>
+              <p className="text-lg text-muted-foreground mt-4">
+                Watch our short demo video to see how Nigran can provide you with real-time tracking and peace of mind.
+              </p>
+            </div>
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto border">
+               <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
         <section className="container py-20 md:py-32 text-center">
             <div className="bg-primary/90 text-primary-foreground rounded-2xl p-12 md:p-16 shadow-xl">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline">Ready to Start Monitoring?</h2>
